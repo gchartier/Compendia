@@ -11,6 +11,7 @@ export default async function user(req, res) {
                 id: user.id,
                 publicAddress: user.publicAddress,
                 email: user.email,
+                isAdmin: user.isAdmin,
                 exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24 * 7, // one week
             },
             process.env.JWT_SECRET

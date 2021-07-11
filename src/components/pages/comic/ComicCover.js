@@ -2,10 +2,10 @@ import Link from "next/link"
 import Image from "next/image"
 import PropTypes from "prop-types"
 
-export function ComicCover({ comicID, title, cover, footer }) {
+export function ComicCover({ comicID, title, cover, footer, link = `/comics/${comicID}` }) {
     return (
         <article className="cursor-pointer">
-            <Link href={`/comics/${comicID}`} passHref>
+            <Link href={link} passHref>
                 <div className="relative w-36 h-56 sm:w-52 sm:h-80 2xl:w-60 2xl:h-96">
                     <Image
                         src={cover}

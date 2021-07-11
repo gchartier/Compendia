@@ -14,7 +14,7 @@ async function insertNewUser(client, res, metadata) {
 }
 
 async function getExistingUser(client, res, userID) {
-    const query = `SELECT user_id, email FROM users WHERE user_id = $1`
+    const query = `SELECT user_id, email, is_admin FROM users WHERE user_id = $1`
     const params = [userID]
     const result = await client.query(query, params)
 
@@ -28,6 +28,7 @@ async function getOrCreateUser(client, res, metadata) {
     if (existingUser?.user_id) {
         user.id = existingUser.user_id
         user.email = existingUser.email
+        user.isAdmin = existingUser.is_admin
     } else {
         const newUser = await insertNewUser(client, res, metadata)
         user.id = newUser.user_id
@@ -51,6 +52,7 @@ export default async function login(req, res) {
                 id: user.id,
                 publicAddress: metadata.publicAddress,
                 email: user.email,
+                isAdmin: user.isAdmin,
                 exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24 * 7, // one week
             },
             process.env.JWT_SECRET
