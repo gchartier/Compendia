@@ -47,7 +47,7 @@ export default async function handler(req, res) {
                     titleOverflow: comic.title_overflow,
                     variantDescription: comic.variant_description,
                     unparsedCreators: comic.unparsed_creators,
-                    unparsed_title: comic.unparsed_title,
+                    unparsedTitle: comic.unparsed_title,
                     unparsedSubtitle: comic.unparsed_subtitle,
                     unparsedFormat: comic.unparsed_format,
                     unparsedItemNumber: comic.unparsed_item_number,
