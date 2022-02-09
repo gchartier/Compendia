@@ -2,6 +2,10 @@
 
 ![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=compendia)
 
+## Compendia Has Been Taken Offline. 😥
+Unfortunately, the source of data was trash and even though the process of obtaining the comic releases was automatic, the data wasn't good enough to throw in the DB without a manual review. For a while, I had enough motivation to keep it up but life comes at ya fast and I found myself no longer having the time and energy to stay on top of it. I'm so glad I made this because I learned a ton and it was a necessary selling point to get me a job in web development. Compendia will live on forever in my heart. ❤️❤️‍🔥💥📚📖
+
+
 ## About
 
 Compendia is a full-stack open-source comic book collecting web application where you can explore the world of new comic book releases, track your pull list, and organize your collection. If you're a comic reader, check it out [here](https://mycompendia.com)!
@@ -29,9 +33,9 @@ First, I began doing an in-depth research of the comic industry and then began d
 
 ## Result
 
-Now, Compendia is a fully-functioning MVP of the vision I had of a Comic Collector's companion. While it does have a great initial set of features, I plan on maintaining and improving it with even more functionality as time goes on. My ultimate vision for Compendia is for it to be a tool to make the comic industry and the wealth of incredible stories easily navigable, and a place comic creators can go to promote their works and connect with their fans.
+Now, Compendia is a fully-functioning MVP of the vision I had of a Comic Collector's companion. While it does have a great initial set of features, I plan on maintaining and improving it with even more functionality as time goes on. My ultimate vision for Compendia was for it to be a tool to make the comic industry and the wealth of incredible stories easily navigable, and a place comic creators can go to promote their works and connect with their fans.
 
-## Future Developments (so far)
+## Potential Future Developments
 
 -   Dark mode
 -   Publishers filter on releases page
